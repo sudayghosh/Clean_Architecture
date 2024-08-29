@@ -1,0 +1,14 @@
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\bin\Release\net8.0\SecondInterviewRelliSource.exe
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\bin\Release\net8.0\SecondInterviewRelliSource.deps.json
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\bin\Release\net8.0\SecondInterviewRelliSource.runtimeconfig.json
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\bin\Release\net8.0\SecondInterviewRelliSource.dll
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\bin\Release\net8.0\SecondInterviewRelliSource.pdb
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\obj\Release\net8.0\SecondInterviewRelliSource.GeneratedMSBuildEditorConfig.editorconfig
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\obj\Release\net8.0\SecondInterviewRelliSource.AssemblyInfoInputs.cache
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\obj\Release\net8.0\SecondInterviewRelliSource.AssemblyInfo.cs
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\obj\Release\net8.0\SecondInterviewRelliSource.csproj.CoreCompileInputs.cache
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\obj\Release\net8.0\SecondInterviewRelliSource.dll
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\obj\Release\net8.0\refint\SecondInterviewRelliSource.dll
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\obj\Release\net8.0\SecondInterviewRelliSource.pdb
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\obj\Release\net8.0\SecondInterviewRelliSource.genruntimeconfig.cache
+E:\Practice\2022\DemoApplication\SecondInterviewRelliSource\obj\Release\net8.0\ref\SecondInterviewRelliSource.dll
