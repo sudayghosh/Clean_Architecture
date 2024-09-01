@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l1sn+vgTRg0=",
+  "dgSpecHash": "hjEpgDxknII=",
   "success": true,
-  "projectFilePath": "E:\\Practice\\2022\\DemoApplication\\Demo.Domain\\Demo.Domain.csproj",
+  "projectFilePath": "E:\\Practice\\2022\\Clean_Architecture\\DemoApplication\\Demo.Domain\\Demo.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

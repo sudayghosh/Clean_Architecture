@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Practice\\2022\\DemoApplication\\TestRelisource\\TestRelisource.csproj": {}
+    "E:\\Practice\\2022\\Clean_Architecture\\DemoApplication\\TestRelisource\\TestRelisource.csproj": {}
   },
   "projects": {
-    "E:\\Practice\\2022\\DemoApplication\\TestRelisource\\TestRelisource.csproj": {
+    "E:\\Practice\\2022\\Clean_Architecture\\DemoApplication\\TestRelisource\\TestRelisource.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Practice\\2022\\DemoApplication\\TestRelisource\\TestRelisource.csproj",
+        "projectUniqueName": "E:\\Practice\\2022\\Clean_Architecture\\DemoApplication\\TestRelisource\\TestRelisource.csproj",
         "projectName": "TestRelisource",
-        "projectPath": "E:\\Practice\\2022\\DemoApplication\\TestRelisource\\TestRelisource.csproj",
+        "projectPath": "E:\\Practice\\2022\\Clean_Architecture\\DemoApplication\\TestRelisource\\TestRelisource.csproj",
         "packagesPath": "C:\\Users\\Suday\\.nuget\\packages\\",
-        "outputPath": "E:\\Practice\\2022\\DemoApplication\\TestRelisource\\obj\\",
+        "outputPath": "E:\\Practice\\2022\\Clean_Architecture\\DemoApplication\\TestRelisource\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

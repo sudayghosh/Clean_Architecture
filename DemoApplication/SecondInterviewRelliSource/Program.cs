@@ -4,12 +4,19 @@ using System.Linq;
 
 Console.WriteLine("Hello, World!");
 
-int[] nums = [3, 2, 4];
-int target = 6;
+int[] nums = [0, 1, 2, 2, 3, 0, 4, 2];
+int target = 2;
 Solution s = new Solution();
-var result = s.RomanToInt("LVIII");
+int[] expectedNums = [1, 2];
+//int[] nums = { 1, 1, 2, 2, 3, 4, 4, 5 };
+int k = s.LengthOfLastWord();
+Console.WriteLine(k); // Output: 5
+//for (int i = 0; i < k; i++)
+//{
+//    Console.Write(nums[i] + " "); // Output: 1 2 3 4 5 
+//}
 
-
+Console.ReadLine(); 
 //List<VisitModel> GetVisitForms(List<Visit> visits, List<Form> forms, List<Guid> visitIds)
 //{
 //    var output = (from v in visits
