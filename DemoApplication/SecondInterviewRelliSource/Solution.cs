@@ -15,11 +15,29 @@ namespace SecondInterviewRelliSource
 
     public class Solution
     {
-        public int LengthOfLastWord(string s = "Hello World")
+        public int[] PlusOne(int[] digits)
         {
-            int k = -1;
+            digits = [1, 2, 3];
+            int[] output = new int[digits.Length];
+            
+            return output;
+        }
 
-            return k;
+        public int LengthOfLastWord(string s = "   to   the moon  ")
+        {
+            int k = 0;
+            string lastWord = string.Empty;
+            s = s.Trim();
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == ' ')
+                {
+                    lastWord = "";
+                    continue;
+                }
+                lastWord += s[i];
+            }
+            return lastWord.Length;
         }
 
         public int StrStr(string haystack = "sadbutsad", string needle = "sad")
