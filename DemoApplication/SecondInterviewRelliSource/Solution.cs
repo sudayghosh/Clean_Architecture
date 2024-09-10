@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SecondInterviewRelliSource
 {
@@ -15,11 +16,173 @@ namespace SecondInterviewRelliSource
 
     public class Solution
     {
+        public void Merge(int[] nums1, int m, int[] nums2, int n)
+        {
+            for (var j = 0; j < n; j++)
+            {
+                nums1[m + j] = nums2[j];
+            }
+
+            int k = nums1.Length - 1;
+            do
+            {
+                int n1 = nums1[k];
+                if (k - 1 >= 0 && n1 < nums1[k - 1])
+                {
+                    nums1[k] = nums1[k - 1];
+                    nums1[k - 1] = n1;
+                    k = nums1.Length;
+                }
+                k--;
+            } while (k >= 0);
+        }
+
+        public int MySqrt(int num = 4)
+        {
+            if (0 == num) { return 0; }
+            int n = (num / 2) + 1;
+            int n1 = (n + (num / n)) / 2;
+            while (n1 < n)
+            {
+                n = n1;
+                n1 = (n + (num / n)) / 2;
+            }
+            return n;
+        }
+
+        public string AddBinary(string a = "1111", string b = "1111")
+        {
+            if (a.Length > b.Length)
+            {
+                b = b.PadLeft(a.Length, '0');
+            }
+            if (a.Length < b.Length)
+            {
+                a = a.PadLeft(b.Length, '0');
+            }
+
+            bool remaining = false;
+            string result = "";
+            for (int i = a.Length - 1; i >= 0; i--)
+            {
+                int aa = a[i] - '0';
+                int bb = b[i] - '0';
+                int sum = Convert.ToInt16((aa.ToString() + bb.ToString())) / 10;
+                //if (remaining)
+                //{
+                //    sum = Convert.ToInt16((aa.ToString() + bb.ToString()));
+                //}
+                if (sum == 1)
+                {
+                    if (!remaining)
+                    {
+                        result += "1";
+                    }
+                    else if (remaining)
+                    {
+                        sum = (sum + 1) % 10;
+                        if (sum == 2)
+                        {
+                            result += "1";
+                            remaining = true;
+                        }
+                        else if (sum == 0)
+                        {
+
+                        }
+                    }
+                }
+                else
+                {
+                    if (remaining)
+                    {
+                        sum += 1;
+                    }
+                    if (sum == 1)
+                        result += "0";
+                    else
+                    {
+                        result += sum.ToString();
+                        remaining = false;
+                    }
+                }
+            }
+
+            if (remaining)
+                result += "1";
+
+            string reverse = "";
+            for (int i = result.Length - 1; i > -1; i--)
+            {
+                reverse += result[i];
+            }
+
+            return reverse;
+        }
+
         public int[] PlusOne(int[] digits)
         {
-            digits = [1, 2, 3];
-            int[] output = new int[digits.Length];
-            
+            digits = [8, 9];
+            int[] output = new int[digits.Length + 1];
+
+            bool remaining = false;
+
+            var start = output.Length - 1;
+
+            if (Convert.ToInt32(digits[digits.Length - 1]) > 8)
+            {
+                output[digits.Length - 1] = 1;
+                remaining = true;
+                start = start - 2;
+            }
+
+            for (int i = start; i >= 0; i--)
+            {
+                if (Convert.ToInt32(digits[i]) > 8)
+                {
+                    if (remaining)
+                    {
+                        output[i] = 0;
+                        remaining = true;
+                    }
+                    else
+                    {
+                        output[i] = digits[i];
+                        remaining = false;
+                    }
+                }
+                else
+                {
+                    output[i] = digits[i];
+                    if (remaining)
+                    {
+                        remaining = false;
+                    }
+                }
+            }
+            //if (remaining)
+            //{
+            //    output[0] = 1;
+            //}
+
+
+            //var total = Convert.ToInt32(digitMerged) + 1;
+
+            //int lastDigit = digits[digits.Length - 1];
+            //if (lastDigit >= 9)
+            //{
+            //    output = new int[total.ToString().Length];
+
+            //    for (int i = 0; i < total.ToString().Length; i++)
+            //    {
+            //        output[i] = total.ToString()[i] - '0';
+            //    }
+            //}
+            //else
+            //{
+            //    digits[digits.Length - 1] = lastDigit + 1;
+            //    output = digits;
+            //}
             return output;
         }
 

@@ -9,8 +9,12 @@ int target = 2;
 Solution s = new Solution();
 int[] expectedNums = [1, 2];
 //int[] nums = { 1, 1, 2, 2, 3, 4, 4, 5 };
-int k = s.LengthOfLastWord();
-Console.WriteLine(k); // Output: 5
+
+int[] nums1 = [1, 2, 3, 0, 0, 0];
+int[] nums2 = [2, 5, 6];
+
+s.Merge(nums1, 3, nums2, 3);
+//Console.WriteLine(k); // Output: 5
 //for (int i = 0; i < k; i++)
 //{
 //    Console.Write(nums[i] + " "); // Output: 1 2 3 4 5 
