@@ -16,6 +16,30 @@ namespace SecondInterviewRelliSource
 
     public class Solution
     {
+        public int SingleNumber(int[] nums)
+        {
+            int output = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int val = nums[i];
+
+                int count = 0;
+                int j = 0;
+                do
+                {
+                    if (j< nums.Length && val == nums[j])
+                    {
+                        count++;
+                    }
+                    j++;
+                } while (j < nums.Length);
+
+                if (count <= 1)
+                    output = val;
+            }
+            return output;
+        }
+
         public void Merge(int[] nums1, int m, int[] nums2, int n)
         {
             for (var j = 0; j < n; j++)
